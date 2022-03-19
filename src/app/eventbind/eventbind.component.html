@@ -1,0 +1,10 @@
+<label>Please Enter a number:</label>
+<input type="number" [(ngModel)]="num">
+
+<button on-click="getValue()">Show</button>
+
+<!-- <div [ngClass]="cssres ? 'even' :'odd'>{{result}}</div> -->
+
+
+<input type="text" [(ngModel)]="color">
+<div [ngStyle]="{'color':color}">Chnage my color</div>
