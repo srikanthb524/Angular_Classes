@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;margin: 25px;">
+  <div class="card-body">
+    <h5 class="card-title">Switch Case Example</h5>
+    <div class="card-text">
+      <label>Enter the number:</label>
+      <input type="text" [(ngModel)]="num">
+      <div [ngSwitch]="num">
+        <div *ngSwitchCase="1">One</div>
+        <div *ngSwitchCase="2">Two</div>
+        <div *ngSwitchCase="3">Three</div>
+        <div *ngSwitchDefault>This is default</div>
+      </div>
+    </div>
+
+  </div>
+</div>

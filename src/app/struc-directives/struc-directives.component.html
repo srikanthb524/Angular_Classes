@@ -1,0 +1,11 @@
+<label> Enter Number to Check Even or Odd</label>
+<input type="text" [(ngModel)]="num" />
+
+<br>
+<button name="evenorodd" (click)="EvenorOdd()" >Click Me!</button>
+
+<p *ngIf="check ;else elseBlock">Number Is Even</p>
+
+<ng-template #elseBlock>
+  <p>Numbr Is Odd</p>
+</ng-template>
