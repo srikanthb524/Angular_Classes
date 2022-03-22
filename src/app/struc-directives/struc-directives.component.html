@@ -4,8 +4,8 @@
 <br>
 <button name="evenorodd" (click)="EvenorOdd()" >Click Me!</button>
 
-<p *ngIf="check ;else elseBlock">Number Is Even</p>
+<p *ngIf="check ;else elseBlock" [style]="isDisplay">Number Is Even</p>
 
 <ng-template #elseBlock>
-  <p>Numbr Is Odd</p>
+  <p >Number Is Odd</p>
 </ng-template>

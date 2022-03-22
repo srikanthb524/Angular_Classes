@@ -1,0 +1,19 @@
+
+<!-- Template Driven Form -->
+<form #userName="ngForm" (ngSubmit)="onDisplay()">
+  <label> Enter Username:</label>
+  <input type="text" name="uName" [(ngModel)]="uname">
+  <br>
+  <input type="submit" value="Submit" >
+</form>
+
+<!-- Reactive Form -->
+
+<form [formGroup]="formdata" (ngSubmit)="onReactDisplay(formdata.value)">
+
+  <label> Enter Username:</label>
+  <input type= "text" name="userName" placeholder="userName"
+  formControlName="userName">
+  <br>
+  <input type="submit" value="Submit" >
+</form>
